@@ -14,7 +14,7 @@ body {
   list-style: none;
   background-color: #f5dfeb;
   text-align: center;
-  word-spacing: 20px;
+  word-spacing: 10px;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -23,15 +23,22 @@ body {
   flex-direction: row;
   justify-content: center;
   flex-wrap: nowrap;
-  grid-area: menu; }
+  grid-area: menu; 
+}
 
 .lista li a {
-  font-size: 2rem;
-  line-height: 4rem;
+  font-size: 20px;
+  line-height: 2rem;
   text-decoration: none;
   color: white;
   display: block;
-  padding: 5px; }
+  padding-right: 10%;
+  padding-left: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding-top: 10%;
+
+}
 
 .lista li {
   display: inline-block; }
@@ -50,7 +57,8 @@ header nav ul li ul li {
   height: 70px;
   word-spacing: 5px;
   position: relative;
-  line-height: 5px; }
+  line-height: 5px; 
+}
 
 header nav ul li:hover ul {
   display: flex;
@@ -59,9 +67,17 @@ header nav ul li:hover ul {
 /*Titulo de la pagina de inicio*/
 .titulo {
   text-align: center;
-  padding: 500px;
-  padding-top: 10px;
-  background-image: url("im2/caja.jpg"); }
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  padding-top:40%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 30%;
+  background-image: url("im2/caja.jpg"); 
+}
 
 .titulo h1 {
   text-align: center;
@@ -71,13 +87,16 @@ header nav ul li:hover ul {
   justify-content: center;
   animation-name: aparecer;
   animation-duration: 3s;
-  margin-top: 400px; }
+  padding-top: 30%;
+}
 
 @keyframes aparecer {
   0% {
     opacity: 0; }
   100% {
-    opacity: 1; } }
+    opacity: 1; 
+    } 
+  }
 
 /*subtitulo de la pagina de inicio*/
 a.opcionesv {
@@ -95,29 +114,32 @@ a.opcionesv:hover {
   text-align: center;
   font-weight: bold;
   line-height: 50px;
-  padding-top: 100px;
-  padding-bottom: 10px;
-  font-size: 35px;
-  margin-left: 400px;
-  margin-right: 400px; }
+  padding-top: 40%;
+  padding-bottom: 0%;
+  font-size: 3rem;
+  margin-left: 10%;
+  margin-right: 10%; 
+}
 
 /*pie de pagina*/
 .footer {
   background-color: #f5dfeb;
   text-align: center;
-  font-size: 2rem;
   color: white;
-  line-height: 40px;
   position: sticky;
   margin-bottom: 0px;
   margin-top: 100%;
-  word-spacing: 2px;
-  grid-area: footer; }
+  grid-area: footer; 
+}
+.footer h4{
+  font-size: 23px;
+   word-spacing: 2px;
+}
 
 .footer a {
   background-color: #f5dfeb;
   text-align: center;
-  font-size: 2rem;
+  font-size: 20px;
   color: white;
   line-height: 20px;
   text-decoration: none; }
@@ -126,8 +148,7 @@ a.opcionesv:hover {
 .boxes {
   font-size: 2rem;
   font-style: bold;
-  padding-top: 40px;
-  margin-top: 30px;
+  padding-top: 5%;
   grid-area: boxes;
   text-align: center;
   align-items: center; }
@@ -135,25 +156,28 @@ a.opcionesv:hover {
 /*descripcion de las cajas*/
 .cajas {
   font-size: 2rem;
-  padding-right: 60px;
-  padding-left: 60px;
-  padding-bottom: 20px;
-  padding-top: 10px;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+  padding-top: 5%;
   grid-area: cajas;
-  margin-bottom: 5px; }
+}
 
 /*imagen de las cajas*/
-.imagen {
-  height: 150px;
+.imagencajas {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
   grid-area: imagen;
-  padding-top: 50px;
-  padding-right: 50px;
-  padding-left: 50px;
-  padding-bottom: 50px;
   background-color: pink;
-  margin-left: 20px;
-  margin-top: 30px;
-  margin-bottom: 20px; }
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 10%; 
+}
 
 /*grid area cajas*/
 .gridcajas {
@@ -164,21 +188,47 @@ a.opcionesv:hover {
 
 .gridArea {
   display: grid;
-  grid-template-areas: "imagen imagen imagen"
+  grid-template-areas: 
+  "imagen imagen imagen"
  "boxes boxes boxes"
  "cajas cajas cajas";
-  background-color: #b5b5b5;
-  padding: 20px;
-  margin: 80px; }
+  background-color: #b5b5b5; 
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 15%;
+  margin-bottom: 15%;
+
+}
+.imagen{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  grid-area: imagen;
+  padding-top: 10%;
+  padding-bottom: 0%;
+  padding-left: 5%;
+ padding-right: 5%;
+  }
 
 /*parrafo en pagina nosotras*/
 .parrafonosotras {
   font-size: 20px;
-  padding-bottom: 50px;
-  padding-top: 10px;
-  padding-right: 370px;
-  padding-left: 370px; }
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  margin-top: 0%;
 
+}
+.parrafos{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-bottom: 10%;
+}
 /*fondo de la pagina nosotras*/
 .fondo {
   background-image: url("im2/corazon.jpg");
@@ -197,17 +247,17 @@ a.opcionesv:hover {
   text-align: left;
   line-height: 30px;
   word-spacing: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
   border: solid 2px #b5b5b5;
   align-items: center;
-  margin-left: 500px;
-  margin-right: 500px;
-  align-content: left;
+  margin-left: 8%;
+  margin-right: 10%;
   align-items: left;
-  width: 250px; }
+  width: 65%; 
+}
 
 .flex {
   grid-area: contacto; }
@@ -243,7 +293,7 @@ a.opcionesv:hover {
   background: #f5dfeb; }
 
 .button {
-  width: 200px;
+  width: 10%;
   height: 40px;
   color: white;
   font-size: 15px;
@@ -258,11 +308,12 @@ p input:hover {
 /*lista opciones en pagina opciones*/
 .listaopciones li a {
   text-align: center;
-  font-size: 2rem;
+  font-size: 20px;
   text-decoration: none;
   color: black;
   list-style-type: none;
-  padding-bottom: 10px; }
+  padding-bottom: 10%; 
+}
 
 .listaopciones {
   display: flex;
@@ -270,22 +321,25 @@ p input:hover {
   list-style-type: none; }
 
 .section_opciones--cajas {
-  grid-area: opciones; }
+  grid-area: opciones; 
+}
 
-.section_opciones--cajas h1 {
-  margin-left: 250px; }
 
 /*cajas de opciones productos por separado*/
 .opciones_cuadros {
-  display: block;
-  margin-left: 200px;
-  margin-top: 200px;
-  margin-right: 200px;
-  margin-bottom: 20px;
-  padding-right: 10px;
-  padding-bottom: 50px;
-  padding-left: 10px;
-  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  margin-left: 0%;
+  margin-top: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-top: 5%;
   background: #fff;
   text-align: center;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
@@ -294,7 +348,8 @@ p input:hover {
   transition: 0.3s;
   margin-top: 30px;
   position: sticky;
-  width: 400px; }
+  width: 90%;
+   }
 
 .section_opciones .opciones_cuadros {
   transform: scale(1.1);
@@ -324,19 +379,19 @@ p input:hover {
   width: 20rem; }
 
 .section_opciones h2 {
-  margin-top: 60px;
-  margin-bottom: 40px;
-  font-size: 27px;
-  align-content: center;
-  margin-left: 220px;
-  margin-right: 200px;
-  width: 400px;
-  text-align: center; }
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-size: 30px;
+  text-align: center;
+  line-height: 30px; 
+}
 
 .section_opciones {
-  margin-left: 350px;
+  margin-left: 10%;
+  margin-right: 10%;
   justify-content: center;
-  grid-area: lonuevo; }
+  grid-area: lonuevo; 
+}
 
 .opciones_cuadros .titulos_opciones {
   font-size: 20px; }
@@ -349,14 +404,16 @@ p input:hover {
   grid-area: carrousel2; }
 
 #carouselExampleControls {
-  width: 600px;
-  margin-left: 300px;
-  margin-right: 200px; }
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%; 
+}
+
 
 /*preguntas frecuentes*/
 .ul_lista {
-  margin-left: 500px;
-  margin-right: 500px; }
+  margin-left: 10%;
+  margin-right:10%; }
 
 .lista_preguntas {
   font-size: 23px;
@@ -367,11 +424,16 @@ p input:hover {
 
 /*servicios*/
 .servicio_fondo {
-  padding-bottom: 400px;
-  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding-bottom: 10%;
+  padding-top: 20%;
   grid-area: servicio;
-  margin-left: 100px;
-  margin-right: 100px; }
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-content:center;
+   }
 
 .preguntas {
   grid-area: preguntas; }
@@ -477,6 +539,63 @@ p input:hover {
  "carrousel1 carrousel1 carrousel1 carrousel1"
  "footer footer footer footer"; 
 }
+
+.menu{
+  list-style: none;  
+  background-color: #f5dfeb;
+  text-align: center;
+  word-spacing: 20px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  grid-area: menu;
+  padding-left: 500px;
+  padding-right: 500px;
+}
+
+.lista li a{
+  font-size: 2rem;
+  line-height: 4rem;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 5px;
+  
+}
+
+.lista li{
+  display: inline-block;
+  
+}
+
+.lista li a:hover{
+  background: #b5b5b5;
+}
+header nav ul li ul{
+  
+  flex-direction: column;
+  position: absolute;
+  background-color:#f5dfeb ;
+  display: none;
+}
+header nav ul li ul li{
+  width: 150px;
+  height: 70px;
+  word-spacing: 5px;
+  position:relative ;
+  line-height: 5px;
+}
+header nav ul li:hover ul{
+
+  display: flex;
+  flex-direction: column;
+}
+
   .titulo {
     text-align: center;
     padding: 5px;
@@ -486,14 +605,17 @@ p input:hover {
     margin-left: 600px;
     width: 700px;
     font-size: 40px; 
+    padding-top:200px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 300px;
   }
   .servicio_fondo {
-    padding-bottom: 400px;
-    padding-top: 50px;
+    padding-bottom: 20%;
     grid-area: servicio;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-top: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
   }
   .otrotitulo {
     text-align: center;
