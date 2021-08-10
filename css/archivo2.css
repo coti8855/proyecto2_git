@@ -447,7 +447,8 @@ p input:hover {
 /*sobre cocobox*/
 .sobrecocobox {
   grid-area: sobrecoco;
-  background-image: url(im2/pulsera.jpg); }
+  background-image: url(im2/pulsera.jpg); 
+}
 
 /*grid pagina inicio*/
 .grilla {
@@ -500,10 +501,109 @@ p input:hover {
  "carrousel1 carrousel1 carrousel1"
  "footer footer footer"; 
 }
+
+.menu{
+  list-style: none;  
+  background-color: #f5dfeb;
+  text-align: center;
+  word-spacing: 20px;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  grid-area: menu;
+  padding-left: 25%;
+  padding-right: 25%;
+  background-color: green;
+}
+  .titulo {
+    text-align: center;
+    background-image: url(../im2/caja.jpg);
+    background-size: cover;
+     grid-area: titulo;
+     margin-left: 0%;
+     margin-right: 0%;
+     padding-top: 15%;
+     padding-bottom: 50%;
+     line-height: 3rem;
+     width: 100%;
+  }
+
+  .titulo h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  animation-name: aparecer;
+  animation-duration: 3s;
+  
+  text-align: center;
+
+}
+  .servicio_fondo {
+    grid-area: servicio;
+  }
+
+  .otrotitulo {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15%;
+    padding-bottom: 2%;
+    font-size: 3rem;
+    text-align: center; 
+  }
+
+  .lista li a{
+  font-size: 20px;
+  line-height: 3rem;
+  text-decoration: none;
+  color: white;
+  padding-top: 3%;
+  padding-bottom: 1%;
+  padding-right: 1%;
+  padding-left: 1%;
+  margin-top: 4%;
+  margin-right: 4%;
+  width: 100%;
+}
+
+.lista li{
+  display: inline-block;
+  
+}
+
+.lista li a:hover{
+  background: #b5b5b5;
+}
+header nav ul li ul{
+  
+  flex-direction: column;
+  position: absolute;
+  background-color:#f5dfeb ;
+  display: none;
+}
+header nav ul li ul li{
+  width: 90%;
+  word-spacing: 1px;
+  position:relative ;
+  line-height: 1px;
+}
+
+
+header nav ul li:hover ul{
+
+  display: flex;
+  flex-direction: column;
+}
+
   /*responsive pagina opciones*/
   .grilla2 {
     display: grid;
-    grid-template-areas: "menu menu menu"
+    grid-template-areas: 
+    "menu menu menu"
  "opciones opciones opciones"
  "lonuevo lonuevo lonuevo"
  "footer footer footer"; 
@@ -609,12 +709,14 @@ header nav ul li:hover ul{
 
   .titulo {
     text-align: center;
-    background-color: blue;
+   background-image: url(../im2/caja.jpg);
+    background-size: cover;
      grid-area: titulo;
-     margin-left: 20%;
-     margin-right: 20%;
-     padding-top: 20%;
+     margin-left: 0%;
+     margin-right: 0%;
+     padding-top: 8%;
      line-height: 3rem;
+     width: 100%;
   }
 
   .titulo h1 {
@@ -623,12 +725,17 @@ header nav ul li:hover ul{
   font-weight: bold;
   animation-name: aparecer;
   animation-duration: 3s;
-  background-color: red;
   text-align: center;
 
 }
   .servicio_fondo {
     grid-area: servicio;
+     background-image: url(../im2/caja.jpg);
+    background-size: cover;
+     grid-area: titulo;
+     margin-left: 0%;
+     margin-right: 0%;
+     width: 100%;
   }
 
   .otrotitulo {
@@ -756,6 +863,7 @@ header nav ul li:hover ul{
     width: 1200px;
     margin-left: 400px;
      }
+
   .gridArea {
     display: grid;
     grid-template-areas:
@@ -801,9 +909,24 @@ header nav ul li:hover ul{
 #carouselExampleControls {
   width: 90%;
   margin-left: 5%;
-  margin-right: 5%; 
+  margin-right: 5%;
+  margin-top: 5%; 
+}
+.fondo{
+    background-image: url(../im2/caja.jpg);
+    background-size: cover;
+     margin-left: 0%;
+     margin-right: 0%;
+     width: 100%;
 }
 
+.sobrecocobox{
+  background-image: url(../im2/caja.jpg);
+    background-size: cover;
+     margin-left: 0%;
+     margin-right: 0%;
+     width: 100%;
+}
   /*media para contacto*/
   .contacto1 {
     display: grid;
