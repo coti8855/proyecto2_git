@@ -15,7 +15,7 @@ body {
 /*barra de navegacion*/
 .menu {
   list-style: none;
-  background-color: #f5dfeb;
+  background-color: #ffe6eb;
   text-align: center;
   position: fixed;
   top: 0px;
@@ -51,7 +51,7 @@ body {
 header nav ul li ul {
   flex-direction: column;
   position: absolute;
-  background-color: #f5dfeb;
+  background-color: #ffe6eb;
   display: none; }
 
 header nav ul li ul li {
@@ -110,7 +110,8 @@ a.opcionesv {
 }
 
 a.opcionesv:hover {
-  transform: scale(1.2); }
+  transform: scale(1.2); 
+}
 
 
 /*titulos de las otras paginas*/
@@ -128,36 +129,41 @@ a.opcionesv:hover {
 
 /*pie de pagina*/
 .footer {
-  background-color: #f5dfeb;
+  background-color: #ffe6eb;
   text-align: center;
   color: white;
   position: sticky;
-  margin-bottom: 0px;
+  margin-bottom: 0%;
+  padding-bottom: 3%;
   margin-top: 100%;
   grid-area: footer; 
 }
 .footer h4{
   font-size: 23px;
    word-spacing: 2px;
+   color: white;
+   padding-top: 2%;
 }
 
 .footer a {
-  background-color: #f5dfeb;
   text-align: center;
-  font-size: 20px;
   color: white;
   line-height: 20px;
-  text-decoration: none; }
+  text-decoration: none; 
+}
+
 
 /*opciones de cajas*/
 .boxes {
-  font-size: 2rem;
+  font-size: 3rem;
   font-style: bold;
   padding-top: 10%;
   padding-bottom: 0%;
   grid-area: boxes;
   text-align: center;
-  align-items: center; }
+  align-items: center; 
+
+}
 
 /*descripcion de las cajas*/
 .cajas {
@@ -213,7 +219,7 @@ a.opcionesv:hover {
   align-items: center;
   width: 70%;
   grid-area: imagen;
-  padding-top: 10%;
+  padding-top: 5%;
   padding-bottom: 0%;
   padding-left: 14%;
  padding-right: 10%;
@@ -248,7 +254,7 @@ a.opcionesv:hover {
 /*formulario en pagina contacto*/
 .formulario {
   font-size: 20px;
-  background-color: #f5dfeb;
+  background-color: #fffefa;
   text-align: left;
   line-height: 30px;
   word-spacing: 40px;
@@ -256,12 +262,15 @@ a.opcionesv:hover {
   padding-right: 10%;
   padding-top: 10%;
   padding-bottom: 10%;
-  border: solid 2px #b5b5b5;
   align-items: center;
   margin-left: 8%;
   margin-right: 10%;
+  margin-top: 5%;
   align-items: left;
   width: 65%; 
+  border: none;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+   overflow: hidden;
 }
 
 .flex {
@@ -280,7 +289,6 @@ a.opcionesv:hover {
 .input {
   width: 95%;
   padding: 15px;
-  background-color: #f5dfeb;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -288,31 +296,35 @@ a.opcionesv:hover {
 
 .input:focus {
   outline: none;
-  background: linear-gradient(to bottom, #f5dfeb, white);
-  border-bottom: white; }
+
+   }
 
 .enviar {
   width: 40%;
   padding: 15px;
   background-color: #b5b5b5;
   border: none;
-  color: white; }
+  color: white; 
+}
 
 .enviar:hover {
-  background: #f5dfeb; }
+  background: #ffe6eb; 
+}
 
 .button{
-  width: 50%;
-  height: 50%;
-  color: white;
-  font-size: 1rem;
-  font-family: 'Noticia Text', serif;
-  border:solid 1px grey;
-  background-color: pink;
+ width: 60%;
+  padding: 15px;
+  background-color: #b5b5b5;
+  border: none;
+  color: white; 
   margin-top: 3%;
   margin-bottom: 6%;
   margin-right: 10%;
-  margin-left: 25%;
+  margin-left: 20%;
+}
+
+.button:hover{
+    background: #ffe6eb;
 }
 
 p input:hover {
@@ -357,7 +369,6 @@ p input:hover {
   background: #fff;
   text-align: center;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-  border-radius: 4px;
   overflow: hidden;
   transition: 0.3s;
   margin-top: 10%;
@@ -396,19 +407,22 @@ p input:hover {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1); }
 
 .section_opciones .opciones_cuadros:hover {
-  background: #f5dfeb; }
+  background: #ffe6eb; 
+}
 
 .opciones_cuadros a {
  width: 50%;
   height: 50%;
   color: black;
   font-size: 1rem;
+  text-decoration: none;
   font-family: 'Noticia Text', serif;
    }
 
 .opciones_cuadros a:hover {
-  background: #f5dfeb;
-  color: #b5b5b5; }
+  background: #ffe6eb;
+  color: #b5b5b5; 
+}
 
 .opciones_cuadros img {
   width: 70%;
@@ -471,32 +485,32 @@ p input:hover {
     margin-left: 0%;
    }
     .parrafos{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  display: inline-block;
 }
    .foto1 {
-   width: 23%;
+   width: 37%;
   grid-area: imagen;
   margin-left: 0%;
   margin-right: 15%;
   margin-top: 0%;
   margin-bottom: 5%; 
+  padding-top: 3%;
  position: absolute;
- left: 70%;
+ left: 32%;
 
 
    }
 
    .foto2 {
-  width: 24%;
+  width: 39%;
   grid-area: imagen;  
   margin-left: 0%;
   margin-right: 15%;
   margin-top: 0%;
+  padding-top: 3%;
   margin-bottom: 5%; 
  position: absolute;
- left: 70%;
+ left: 32%;
   
 
 }
@@ -534,7 +548,7 @@ p input:hover {
   }
 
  .parrafonosotras2{
-  margin-right: 33%;
+  margin-right: 5%;
   margin-left: 5%;
   font-size: 20px;
  }
@@ -550,7 +564,10 @@ p input:hover {
 .sobrecocobox {
   grid-area: sobrecoco;
    }
+.servicio_fondo{
+  padding-top: 10%;
 
+}
 .servicio_fondo h2 {
     margin-top: 5%;
     margin-bottom: 5%;
@@ -642,7 +659,7 @@ p input:hover {
 
 .menu{
   list-style: none;  
-  background-color: #f5dfeb;
+  background-color: #ffe6eb;
   text-align: center;
   word-spacing: 20px;
   position: fixed;
@@ -664,7 +681,7 @@ p input:hover {
      grid-area: titulo;
      margin-left: 0%;
      margin-right: 0%;
-     padding-top: 15%;
+     padding-top: 5%;
      padding-bottom: 50%;
      line-height: 3rem;
      width: 100%;
@@ -672,12 +689,24 @@ p input:hover {
 
   .titulo h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   animation-name: aparecer;
   animation-duration: 3s; 
   text-align: center;
 
+}
+a .opcionesv {
+  text-align: centre;
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black; 
+  padding-top: 6%;
+}
+
+a .opcionesv:hover {
+  transform: scale(1.2); 
 }
 
 .parrafos{
@@ -686,27 +715,27 @@ p input:hover {
   flex-wrap: nowrap;
 }
    .foto1 {
-   width: 23%;
+   width: 25%;
   grid-area: imagen;
   margin-left: 0%;
-  margin-right: 15%;
   margin-top: 0%;
   margin-bottom: 5%; 
+  padding-top: 3%;
  position: absolute;
- left: 70%;
+ left: 68%;
 
 
    }
 
    .foto2 {
-  width: 24%;
+  width: 28%;
   grid-area: imagen;  
   margin-left: 0%;
-  margin-right: 15%;
   margin-top: 0%;
   margin-bottom: 5%; 
+  padding-top: 3%;
  position: absolute;
- left: 70%;
+ left: 68%;
   
 
 }
@@ -732,12 +761,15 @@ p input:hover {
   .servicio_fondo {
     grid-area: servicio;
     margin-right: 0%;
+   padding-top: 10%;
     margin-left: 0%;
   }
 
 .parrafonosotras2 {
     padding-left: 0%;
-    padding-right: 0%;
+    padding-right: 30%;
+    padding-top: 3%;
+    margin-bottom: 0%;
     font-size: 2rem;
 
   }
@@ -746,9 +778,11 @@ p input:hover {
     font-weight: bold;
     padding-top: 0%;
     margin-top: 0%;
-    padding-bottom: 1%;
-    font-size: 3rem;
-    text-align: center; 
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    font-size: 4rem;
+    text-align: left; 
+    margin-left: 5%;
   }
 
   .lista li a{
@@ -777,7 +811,7 @@ header nav ul li ul{
   
   flex-direction: column;
   position: absolute;
-  background-color:#f5dfeb ;
+  background-color: #ffe6eb ;
   display: none;
 }
 header nav ul li ul li{
@@ -835,7 +869,28 @@ header nav ul li:hover ul{
     margin-right: 30%;
     text-align: center; 
   }
-
+ .otrotitulo{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15%;
+    padding-bottom: 0%;
+    font-size: 4rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    margin-bottom: 2%; 
+  }
+.preguntas h2{
+  text-align: center;
+    font-weight: bold;
+    padding-top: 15%;
+    padding-bottom: 0%;
+    font-size: 4rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    margin-bottom: 2%;
+}
 
  .opciones_cuadros {
     display: inline-block;
@@ -850,7 +905,6 @@ header nav ul li:hover ul{
     background: #fff;
     text-align: center;
     box-shadow: 0% 0% 3% rgba(1, 41, 112, 0.08);
-    border-radius: 2%;
     overflow: hidden;
     transition: 0.3s;
     margin-top: 0%;
@@ -880,7 +934,7 @@ header nav ul li:hover ul{
     padding-bottom: 15%;
  }
  .sobrecocobox{
-    padding-bottom: 30%;
+    padding-bottom: 0%;
  }
   /*responsive pagina cajas*/
   .gridcajas {
@@ -889,28 +943,33 @@ header nav ul li:hover ul{
  "gridcajas2 gridcajas2 gridcajas2"
  "footer footer footer"; 
 }
+ 
  .button{
-  width: 20%;
-  color: white;
-  font-size: 1rem;
-  font-family: 'Noticia Text', serif;
-  border:solid 1px grey;
-  background-color: pink;
+ width: 50%;
+  padding: 2%;
+  background-color: #b5b5b5;
+  border: none;
+  color: white; 
   margin-top: 3%;
-  margin-bottom: 0%;
-  margin-right: 20%;
-  margin-left: 40%;
+  margin-bottom: 6%;
+  margin-right: 10%;
+  margin-left: 25%;
 }
+
+.button:hover{
+    background: #ffe6eb;
+}
+
 
 .imagen {   
     grid-area: imagen;
     padding-top: 0%;
     padding-right: 2%;
-    padding-left: 33%;
+    padding-left: 28%;
     padding-bottom: 2%;
     margin-top: 0%;
     margin-bottom: 0%; 
-    width: 35%;
+    width: 45%;
 
   }
 
@@ -920,7 +979,8 @@ header nav ul li:hover ul{
   padding-top: 5%;
   padding-bottom: 5%;
   grid-area: boxes;
-  text-align: center;
+  text-align: center
+  ;
   align-items: center;
    }
 
@@ -933,6 +993,7 @@ header nav ul li:hover ul{
  "preguntas preguntas preguntas"
  "footer footer footer"; 
 }
+
  .flex {
     grid-area: contacto;
     background-image: url(../im2/fondo.jpeg);
@@ -945,12 +1006,17 @@ header nav ul li:hover ul{
     padding-bottom: 20%;
     padding-top: 5%;
    }
+     .ul_lista {
+    margin-left: 10%;
+    margin-right: 10%; 
+    margin-top: 4%;
+  }
 
  .carrousel2 {
   width: 70%;
   margin-left: 15%;
   margin-right: 15%; 
-  margin-top: 10%;
+  margin-top: 0%;
 }
  
 }
@@ -993,7 +1059,7 @@ header nav ul li:hover ul{
 
 .menu{
   list-style: none;  
-  background-color: #f5dfeb;
+  background-color: #ffe6eb;
   text-align: center;
   word-spacing: 20px;
   position: fixed;
@@ -1034,7 +1100,7 @@ header nav ul li ul{
   
   flex-direction: column;
   position: absolute;
-  background-color:#f5dfeb ;
+  background-color: #ffe6eb  ;
   display: none;
 }
 header nav ul li ul li{
@@ -1058,11 +1124,24 @@ header nav ul li:hover ul{
      grid-area: titulo;
      margin-left: 0%;
      margin-right: 0%;
-     padding-top: 6%;
+     padding-top: 3%;
      padding-bottom: 50%;
      line-height: 3rem;
      width: 100%;
   }
+
+  a .opcionesv{
+  text-align: centre;
+  font-size: 4rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black; 
+  margin-top: 6%;
+}
+
+a .opcionesv:hover {
+  transform: scale(1.2); 
+}
 
   .parrafos{
   display: flex;
@@ -1070,27 +1149,29 @@ header nav ul li:hover ul{
   flex-wrap: nowrap;
 }
    .foto1 {
-   width: 23%;
+   width: 25%;
   grid-area: imagen;
   margin-left: 0%;
   margin-right: 15%;
   margin-top: 0%;
+  padding-top: 2%;
   margin-bottom: 5%; 
  position: absolute;
- left: 70%;
+ left: 65%;
 
 
    }
 
    .foto2 {
-  width: 24%;
+  width: 28%;
   grid-area: imagen;  
   margin-left: 0%;
   margin-right: 15%;
   margin-top: 0%;
   margin-bottom: 5%; 
  position: absolute;
- left: 70%;
+ left: 65%;
+ padding-top: 2%;
   
 
 }
@@ -1116,11 +1197,12 @@ header nav ul li:hover ul{
   .titulo h1 {
   text-align: center;
   font-size: 4rem;
+  line-height: 4rem;
   font-weight: bold;
   animation-name: aparecer;
   animation-duration: 3s;
   text-align: center;
-  margin-top: 4%;
+  margin-top: 0%;
 
 }
 
@@ -1129,7 +1211,7 @@ header nav ul li:hover ul{
      margin-right: 0%;
      margin-left: 0%;
      margin-top: 0%;
-     padding-top: 10%;
+     padding-top: 6%;
   }
 
  .servicio_fondo h2{
@@ -1137,19 +1219,20 @@ header nav ul li:hover ul{
     font-weight: bold;
     line-height: 3rem;
     padding-top: 5%;
-    padding-bottom: 3%;
+    padding-bottom: 0%;
     font-size: 4rem;
-    margin-left: 10%;
-
+    margin-left: 5%;
+  margin-bottom: 0%;
 
  }
   
 .parrafonosotras2 {
     font-size: 2rem;
     margin-left: 0%;
-    padding-left: 10%;
+    padding-left: 5%;
     padding-right: 15%;
-    margin-right: 20%;
+    padding-top: 2%;
+    margin-right: 22%;
     margin-top: 0%;
     grid-area: parrafo;
   }
@@ -1159,14 +1242,14 @@ header nav ul li:hover ul{
   .otrotitulo{
     text-align: center;
     font-weight: bold;
-    line-height: 2rem;
+  
     padding-top: 12%;
     padding-bottom: 0%;
     font-size: 4rem;
     margin-left: 30%;
     margin-right: 30%;
     text-align: center;
-    margin-bottom: 5%; 
+    margin-bottom: 2%; 
   }
 
 .otrotitulos{
@@ -1174,7 +1257,7 @@ header nav ul li:hover ul{
     font-weight: bold;
     line-height: 3rem;
     padding-top: 12%;
-    padding-bottom: 3%;
+    padding-bottom: 0%;
     font-size: 4rem;
     margin-left: 30%;
     margin-right: 30%;
@@ -1216,7 +1299,6 @@ header nav ul li:hover ul{
     background: #fff;
     text-align: center;
     box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-    border-radius: 2%;
     overflow: hidden;
     transition: 0.3s;
     margin-top: 0%;
@@ -1233,7 +1315,7 @@ header nav ul li:hover ul{
     display: inline-block; 
   }
   .section_opciones .opciones_cuadros:hover {
-    background: #f5dfeb; 
+    background: #ffe6eb; 
   }
 
   .section_opciones h2 {
@@ -1311,8 +1393,7 @@ header nav ul li:hover ul{
     padding-bottom: 2%;
     margin-top: 0%;
     margin-bottom: 0%; 
-    width: 25%;
-   
+    width: 30%;
   }
 
 
@@ -1331,27 +1412,56 @@ header nav ul li:hover ul{
   }
 
 
-.boxes{
+.gridArea h4{
   margin-top: 8%;
-}
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+  margin-left: 0%;
 
+}
+.gridArea h5{
+  margin-top: 8%;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+ 
+}
+.gridArea h6{
+  margin-top: 8%;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+ 
+}
 .cajasu{
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
 }
 
+.boxes {
+  font-size: 3rem;
+  font-style: bold;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  grid-area: boxes;
+  text-align: center;
+
+
+   }
+
 .button{
-  width: 40%;
-  height: 10%;
-  color: white;
-  font-size: 1rem;
-  font-family: 'Noticia Text', serif;
-  border:solid 1px grey;
-  background-color: pink;
+ width: 50%;
+  padding: 2%;
+  background-color: #b5b5b5;
+  border: none;
+  color: white; 
   margin-top: 3%;
   margin-bottom: 6%;
-  margin-right: 20%;
-  margin-left: 20%;
+  margin-right: 10%;
+  margin-left: 25%;
+}
+
+.button:hover{
+    background: #ffe6eb;
 }
 
 
@@ -1369,13 +1479,16 @@ header nav ul li:hover ul{
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 0%;
+    padding-top: 0%;
   }
 
 .carrousel2 {
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%; 
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%; 
   margin-top: 0%;
+  padding-top: 0%;
+  justify-content: center;
 }
 
  .fondo{
@@ -1384,7 +1497,7 @@ header nav ul li:hover ul{
     padding-bottom: 15%;
  }
  .sobrecocobox{
-    padding-bottom: 50%;
+    padding-bottom: 0%;
  }
 
   /*media para contacto*/
@@ -1396,10 +1509,11 @@ header nav ul li:hover ul{
  "footer footer footer footer";
 }
   .ul_lista {
-    margin-left: 15%;
-    margin-right: 15%; 
-    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%; 
+    margin-top: 4%;
   }
+
   .lista_preguntas {
     font-size: 23.75px;
     padding-bottom: 15px;
@@ -1409,7 +1523,7 @@ header nav ul li:hover ul{
   }
   .formulario {
     font-size: 20px;
-    background-color: #f5dfeb;
+    background-color: #fffefa;
     text-align: left;
     line-height: 30px;
     word-spacing: 5%;
@@ -1417,16 +1531,21 @@ header nav ul li:hover ul{
     padding-right: 5%;
     padding-top: 2%;
     padding-bottom: 5%;
-    border: solid 2px #b5b5b5;
     align-items: center;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 6%;
     margin-bottom: 5%;
-    align-content: left;
+    align-content: center;
     align-items: left;
-    width: 40%; 
+    width: 50%; 
+    border: none;
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  
+    overflow: hidden;
+    transition: 0.3s;
   }
+
   .flex {
     grid-area: contacto;
     background-image: url(../im2/fondo.jpeg);
@@ -1442,8 +1561,7 @@ header nav ul li:hover ul{
   }
   .input {
     width: 90%;
-    padding: 15px;
-    background-color: #f5dfeb;
+    padding: 15px;;
     border-top: none;
     border-left: none;
     border-right: none;
