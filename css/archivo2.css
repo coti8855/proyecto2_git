@@ -3,18 +3,20 @@
   padding: 0; }
 
 html {
-  font-size: 80%; }
+  font-size: 80%; 
+}
 
 body {
-  font-family: 'Noticia Text', serif;
-  font-size: 1rem; }
+  font-family: 'Besley', serif;
+
+  font-size: 1rem; 
+}
 
 /*barra de navegacion*/
 .menu {
   list-style: none;
   background-color: #f5dfeb;
   text-align: center;
-  word-spacing: 10px;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -65,23 +67,23 @@ header nav ul li:hover ul {
   flex-direction: column; }
 
 /*Titulo de la pagina de inicio*/
+
 .titulo {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: center;
-  align-items: center;
-  padding-top:40%;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 30%;
-  background-image: url("im2/caja.jpg"); 
-}
+    text-align: center;
+    background-image: url(../im2/caja.jpg);
+    background-size: cover;
+     grid-area: titulo;
+     margin-left: 0%;
+     margin-right: 0%;
+     padding-top: 0%;
+     padding-bottom: 50%;
+     line-height: 3rem;
+     width: 100%;
+  }
 
 .titulo h1 {
   text-align: center;
-  font-size: 40px;
+  font-size: 3rem;
   font-weight: bold;
   grid-area: titulo;
   justify-content: center;
@@ -101,13 +103,15 @@ header nav ul li:hover ul {
 /*subtitulo de la pagina de inicio*/
 a.opcionesv {
   text-align: centre;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-transform: capitalize;
   text-decoration: none;
-  color: black; }
+  color: black; 
+}
 
 a.opcionesv:hover {
   transform: scale(1.2); }
+
 
 /*titulos de las otras paginas*/
 .otrotitulo {
@@ -119,7 +123,7 @@ a.opcionesv:hover {
   font-size: 3rem;
   margin-left: 10%;
   margin-right: 10%; 
-  margin-bottom: 0%;
+  margin-bottom: 5%;
 }
 
 /*pie de pagina*/
@@ -149,7 +153,8 @@ a.opcionesv:hover {
 .boxes {
   font-size: 2rem;
   font-style: bold;
-  padding-top: 5%;
+  padding-top: 10%;
+  padding-bottom: 0%;
   grid-area: boxes;
   text-align: center;
   align-items: center; }
@@ -190,14 +195,13 @@ a.opcionesv:hover {
 .gridArea {
   display: grid;
   grid-template-areas: 
+  "boxes boxes boxes"
   "imagen imagen imagen"
- "boxes boxes boxes"
  "cajas cajas cajas";
-  background-color: #b5b5b5; 
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: 15%;
+  margin-top: 5%;
   margin-bottom: 15%;
 
 }
@@ -207,12 +211,12 @@ a.opcionesv:hover {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 70%;
   grid-area: imagen;
   padding-top: 10%;
   padding-bottom: 0%;
-  padding-left: 5%;
- padding-right: 5%;
+  padding-left: 14%;
+ padding-right: 10%;
   }
 
 /*parrafo en pagina nosotras*/
@@ -232,11 +236,11 @@ a.opcionesv:hover {
 }
 /*fondo de la pagina nosotras*/
 .fondo {
-  background-image: url("im2/corazon.jpg");
-  background-repeat: no-repeat;
-  background-size: 100vh;
-  background-position: center;
-  grid-area: sobrenosotras; }
+  grid-area: sobrenosotras; 
+  background-image: url(../im2/fondo.jpeg);
+  background-size: cover;
+  padding-bottom: 10%;
+}
 
 .imagenCajas {
   justify-content: center; }
@@ -261,7 +265,11 @@ a.opcionesv:hover {
 }
 
 .flex {
-  grid-area: contacto; }
+  grid-area: contacto;
+      background-image: url(../im2/fondo.jpeg);
+    background-size: cover;
+    padding-bottom: 20%;
+   }
 
 .formulario label {
   display: flex;
@@ -293,19 +301,18 @@ a.opcionesv:hover {
 .enviar:hover {
   background: #f5dfeb; }
 
-.button {
-  width: 65%;
-  height: 8%;
+.button{
+  width: 50%;
+  height: 50%;
   color: white;
-  font-size: 15px;
+  font-size: 1rem;
   font-family: 'Noticia Text', serif;
-  border: solid 1px grey;
-  background-color: #f5dfeb;
-  margin-left: 15%;
-  margin-right: 12%;
-  margin-top: 5%;
-  margin-bottom: 10%;
-  
+  border:solid 1px grey;
+  background-color: pink;
+  margin-top: 3%;
+  margin-bottom: 6%;
+  margin-right: 10%;
+  margin-left: 25%;
 }
 
 p input:hover {
@@ -320,6 +327,7 @@ p input:hover {
   list-style-type: none;
   padding-bottom: 10%; 
 }
+
 
 .listaopciones {
   display: flex;
@@ -338,9 +346,9 @@ p input:hover {
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
-  margin-left: 0%;
+  margin-left: 21%;
   margin-top: 10%;
-  margin-right: 10%;
+  margin-right: 0%;
   margin-bottom: 10%;
   padding-right: 5%;
   padding-bottom: 5%;
@@ -352,10 +360,36 @@ p input:hover {
   border-radius: 4px;
   overflow: hidden;
   transition: 0.3s;
-  margin-top: 30px;
+  margin-top: 10%;
   position: sticky;
-  width: 90%;
+  width: 50%;
    }
+
+   .opciones_cuadros img{
+    width: 20%;
+   }
+
+.imagenCajas a img{
+  width: 60%;
+  margin-right: 10%;
+  margin-left: 10%;
+ margin-top: 0%;
+
+}
+
+.imagenCajas a img:hover{
+  transform: scale(1.2);
+}
+
+.imagenCajas{
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 0%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 
 .section_opciones .opciones_cuadros {
   transform: scale(1.1);
@@ -365,32 +399,22 @@ p input:hover {
   background: #f5dfeb; }
 
 .opciones_cuadros a {
-  display: inline-block;
-  padding: 8px 40px 10px 40px;
-  border-radius: 50px;
+ width: 50%;
+  height: 50%;
   color: black;
-  transition: none;
-  font-size: 12px;
-  font-weight: 400;
-  font-weight: 600;
-  transition: 0.3s;
-  border: 1px solid black;
-  text-decoration: none; }
+  font-size: 1rem;
+  font-family: 'Noticia Text', serif;
+   }
 
 .opciones_cuadros a:hover {
   background: #f5dfeb;
   color: #b5b5b5; }
 
 .opciones_cuadros img {
-  width: 20rem; }
+  width: 70%;
+   }
 
-.section_opciones h2 {
-  margin-top: 10%;
-  margin-bottom: 10%;
-  font-size: 30px;
-  text-align: center;
-  line-height: 30px; 
-}
+
 
 .section_opciones {
   margin-left: 10%;
@@ -398,6 +422,7 @@ p input:hover {
   justify-content: center;
   grid-area: lonuevo; 
 }
+
 
 .opciones_cuadros .titulos_opciones {
   font-size: 20px; }
@@ -410,9 +435,10 @@ p input:hover {
   grid-area: carrousel2; }
 
 #carouselExampleControls {
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%; 
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%; 
+  margin-top: 10%;
 }
 
 
@@ -439,17 +465,101 @@ p input:hover {
   margin-left: 5%;
   margin-right: 5%;
   justify-content:center;
+      
+    background-size: cover;
+    margin-right: 0%;
+    margin-left: 0%;
+   }
+    .parrafos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+   .foto1 {
+   width: 23%;
+  grid-area: imagen;
+  margin-left: 0%;
+  margin-right: 15%;
+  margin-top: 0%;
+  margin-bottom: 5%; 
+ position: absolute;
+ left: 70%;
+
+
    }
 
+   .foto2 {
+  width: 24%;
+  grid-area: imagen;  
+  margin-left: 0%;
+  margin-right: 15%;
+  margin-top: 0%;
+  margin-bottom: 5%; 
+ position: absolute;
+ left: 70%;
+  
+
+}
+
+   .foto2:hover{
+   animation-name: desaparecer;
+ animation-duration: 5s;
+   }
+
+@keyframes desaparecer {
+  0% {
+    opacity: 1; 
+  }
+
+  2% {
+    opacity: 0; 
+    } 
+    100%{
+      opacity: 0;
+    }
+  }
+
+   
+
+.otrotitulos{
+    text-align: center;
+    font-weight: bold;
+    line-height: 2rem;
+    padding-top: 12%;
+    padding-bottom: 5%;
+    font-size: 2rem;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center; 
+  }
+
+ .parrafonosotras2{
+  margin-right: 33%;
+  margin-left: 5%;
+  font-size: 20px;
+ }
+
 .preguntas {
-  grid-area: preguntas; }
+  grid-area: preguntas;
+  background-image: url(../im2/fondo.jpeg);
+  background-size: cover;
+  padding-bottom: 20%;
+   }
 
 /*sobre cocobox*/
 .sobrecocobox {
   grid-area: sobrecoco;
-  background-image: url(im2/pulsera.jpg); 
-}
+   }
 
+.servicio_fondo h2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 3rem;
+    align-content: center;
+    margin-left: 5%;
+    margin-right: 0%;
+    text-align: left; 
+  }
 /*grid pagina inicio*/
 .grilla {
   display: grid;
@@ -474,6 +584,7 @@ p input:hover {
  "gridcajas2"
  "footer"; }
 
+
 /*grid pagina nosotras*/
 .gridnosotras {
   display: grid;
@@ -490,6 +601,33 @@ p input:hover {
  "contacto"
  "preguntas"
  "footer"; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 760px) {
   /*responsive pagina inicio*/
@@ -518,7 +656,6 @@ p input:hover {
   grid-area: menu;
   padding-left: 25%;
   padding-right: 25%;
-  background-color: green;
 }
   .titulo {
     text-align: center;
@@ -538,20 +675,78 @@ p input:hover {
   font-size: 3rem;
   font-weight: bold;
   animation-name: aparecer;
-  animation-duration: 3s;
-  
+  animation-duration: 3s; 
   text-align: center;
 
 }
-  .servicio_fondo {
-    grid-area: servicio;
+
+.parrafos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+   .foto1 {
+   width: 23%;
+  grid-area: imagen;
+  margin-left: 0%;
+  margin-right: 15%;
+  margin-top: 0%;
+  margin-bottom: 5%; 
+ position: absolute;
+ left: 70%;
+
+
+   }
+
+   .foto2 {
+  width: 24%;
+  grid-area: imagen;  
+  margin-left: 0%;
+  margin-right: 15%;
+  margin-top: 0%;
+  margin-bottom: 5%; 
+ position: absolute;
+ left: 70%;
+  
+
+}
+
+   .foto2:hover{
+   animation-name: desaparecer;
+ animation-duration: 5s;
+   }
+
+@keyframes desaparecer {
+  0% {
+    opacity: 1; 
   }
 
-  .otrotitulo {
+  2% {
+    opacity: 0; 
+    } 
+    100%{
+      opacity: 0;
+    }
+  }
+
+  .servicio_fondo {
+    grid-area: servicio;
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+
+.parrafonosotras2 {
+    padding-left: 0%;
+    padding-right: 0%;
+    font-size: 2rem;
+
+  }
+  .servicio_fondo h2 {
     text-align: center;
     font-weight: bold;
-    padding-top: 15%;
-    padding-bottom: 2%;
+    padding-top: 0%;
+    margin-top: 0%;
+    padding-bottom: 1%;
     font-size: 3rem;
     text-align: center; 
   }
@@ -608,15 +803,85 @@ header nav ul li:hover ul{
  "lonuevo lonuevo lonuevo"
  "footer footer footer"; 
 }
+
+.imagenCajas a img{
+  width: 100%;
+  margin-right: 10%;
+  margin-left: 10%;
+ margin-top: 0%;
+
+}
+
+.imagenCajas a img:hover{
+  transform: scale(1.2);
+}
+
+.imagenCajas{
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 0%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.otrotitulos{
+    text-align: center;
+    font-weight: bold;
+    line-height: 3rem;
+    padding-top: 12%;
+    padding-bottom: 5%;
+    font-size: 3rem;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center; 
+  }
+
+
+ .opciones_cuadros {
+    display: inline-block;
+    margin-right: 2%;
+    margin-left: 6%;
+    margin-top: 0%;
+    margin-bottom: 10%;
+    padding-right: 0%;
+    padding-bottom: 3%;
+    padding-left: 0%;
+    padding-top: 2%;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0% 0% 3% rgba(1, 41, 112, 0.08);
+    border-radius: 2%;
+    overflow: hidden;
+    transition: 0.3s;
+    margin-top: 0%;
+    width: 40%;
+    align-items: center;
+
+  }
+
+  .opciones_cuadros img{
+    width: 80%;
+  }
+
+
   /*responsive pagina nosotras*/
   .gridnosotras {
     display: grid;
-    grid-template-areas: "menu menu menu"
+    grid-template-areas: 
+  "menu menu menu"
  "sobrenosotras sobrenosotras sobrenosotras"
  "sobrecoco sobrecoco sobrecoco"
  "carrousel2 carrousel2 carrousel2"
  "footer footer footer"; 
 }
+.fondo{
+ background-image: url(../im2/fondo.jpeg);
+    background-size: cover;
+    padding-bottom: 15%;
+ }
+ .sobrecocobox{
+    padding-bottom: 30%;
+ }
   /*responsive pagina cajas*/
   .gridcajas {
     display: grid;
@@ -624,6 +889,42 @@ header nav ul li:hover ul{
  "gridcajas2 gridcajas2 gridcajas2"
  "footer footer footer"; 
 }
+ .button{
+  width: 20%;
+  color: white;
+  font-size: 1rem;
+  font-family: 'Noticia Text', serif;
+  border:solid 1px grey;
+  background-color: pink;
+  margin-top: 3%;
+  margin-bottom: 0%;
+  margin-right: 20%;
+  margin-left: 40%;
+}
+
+.imagen {   
+    grid-area: imagen;
+    padding-top: 0%;
+    padding-right: 2%;
+    padding-left: 33%;
+    padding-bottom: 2%;
+    margin-top: 0%;
+    margin-bottom: 0%; 
+    width: 35%;
+
+  }
+
+  .boxes {
+  font-size: 3rem;
+  font-style: bold;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  grid-area: boxes;
+  text-align: center;
+  align-items: center;
+   }
+
+
   /*responsive pagina contacto*/
   .contacto1 {
     display: grid;
@@ -631,8 +932,52 @@ header nav ul li:hover ul{
  "contacto contacto contacto"
  "preguntas preguntas preguntas"
  "footer footer footer"; 
- } 
 }
+ .flex {
+    grid-area: contacto;
+    background-image: url(../im2/fondo.jpeg);
+    background-size: cover;
+    padding-bottom: 20%;
+ } 
+ .preguntas{
+    background-image: url(../im2/fondo.jpeg);
+    background-size: cover;
+    padding-bottom: 20%;
+    padding-top: 5%;
+   }
+
+ .carrousel2 {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%; 
+  margin-top: 10%;
+}
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*responsive pagina inicio*/
 @media screen and (min-width: 1020px) {
@@ -641,7 +986,7 @@ header nav ul li:hover ul{
     grid-template-areas: 
   "menu menu menu menu menu"
  "titulo titulo titulo titulo titulo"
- "servicio servicio servicio servicio servicio"
+ "servicio servicio foto foto foto"
  "footer footer footer footer"; 
 
 }
@@ -662,7 +1007,6 @@ header nav ul li:hover ul{
   grid-area: menu;
   padding-left: 25%;
   padding-right: 25%;
-  background-color: red;
 }
 
 .lista li a{
@@ -714,9 +1058,59 @@ header nav ul li:hover ul{
      grid-area: titulo;
      margin-left: 0%;
      margin-right: 0%;
-     padding-top: 8%;
+     padding-top: 6%;
+     padding-bottom: 50%;
      line-height: 3rem;
      width: 100%;
+  }
+
+  .parrafos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+   .foto1 {
+   width: 23%;
+  grid-area: imagen;
+  margin-left: 0%;
+  margin-right: 15%;
+  margin-top: 0%;
+  margin-bottom: 5%; 
+ position: absolute;
+ left: 70%;
+
+
+   }
+
+   .foto2 {
+  width: 24%;
+  grid-area: imagen;  
+  margin-left: 0%;
+  margin-right: 15%;
+  margin-top: 0%;
+  margin-bottom: 5%; 
+ position: absolute;
+ left: 70%;
+  
+
+}
+
+   .foto2:hover{
+   animation-name: desaparecer;
+ animation-duration: 5s;
+   }
+
+@keyframes desaparecer {
+  0% {
+    opacity: 1; 
+  }
+
+  2% {
+    opacity: 0; 
+    } 
+    100%{
+      opacity: 0;
+    }
   }
 
   .titulo h1 {
@@ -726,29 +1120,67 @@ header nav ul li:hover ul{
   animation-name: aparecer;
   animation-duration: 3s;
   text-align: center;
+  margin-top: 4%;
 
 }
+
   .servicio_fondo {
     grid-area: servicio;
-     background-image: url(../im2/caja.jpg);
-    background-size: cover;
-     grid-area: titulo;
-     margin-left: 0%;
      margin-right: 0%;
-     width: 100%;
+     margin-left: 0%;
+     margin-top: 0%;
+     padding-top: 10%;
   }
 
-  .otrotitulo {
+ .servicio_fondo h2{
+    text-align: left;
+    font-weight: bold;
+    line-height: 3rem;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    font-size: 4rem;
+    margin-left: 10%;
+
+
+ }
+  
+.parrafonosotras2 {
+    font-size: 2rem;
+    margin-left: 0%;
+    padding-left: 10%;
+    padding-right: 15%;
+    margin-right: 20%;
+    margin-top: 0%;
+    grid-area: parrafo;
+  }
+
+  
+
+  .otrotitulo{
+    text-align: center;
+    font-weight: bold;
+    line-height: 2rem;
+    padding-top: 12%;
+    padding-bottom: 0%;
+    font-size: 4rem;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    margin-bottom: 5%; 
+  }
+
+.otrotitulos{
     text-align: center;
     font-weight: bold;
     line-height: 3rem;
-    padding-top: 15%;
-    padding-bottom: 0%;
+    padding-top: 12%;
+    padding-bottom: 3%;
     font-size: 4rem;
     margin-left: 30%;
     margin-right: 30%;
     text-align: center; 
   }
+
 
   /*responsive pagina opciones*/
   .grilla2 {
@@ -760,16 +1192,20 @@ header nav ul li:hover ul{
  "footer footer footer footer"; 
 }
   .section_opciones {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 16%;
+  margin-right: 16%;
   justify-content: center;
   grid-area: lonuevo; 
+}
+
+.section_opciones--cajas{
+  background-image: url(../im2/carrousel.jpg);
 }
 
 
   .opciones_cuadros {
     display: inline-block;
-    margin-left: 1%;
+    margin-left: 3%;
     margin-top: 0%;
     margin-right: 1%;
     margin-bottom: 5%;
@@ -784,11 +1220,11 @@ header nav ul li:hover ul{
     overflow: hidden;
     transition: 0.3s;
     margin-top: 0%;
-    width: 30%;
+    width: 28%;
   }
   .cajas--chicas{
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 0%;
+    margin-right: 0%;
     margin-top: 0%;
   }
   .section_opciones .opciones_cuadros {
@@ -809,6 +1245,28 @@ header nav ul li:hover ul{
     margin-right: 25%;
     text-align: center; 
   }
+.imagenCajas a img{
+  width: 100%;
+  margin-right: 10%;
+  margin-left: 10%;
+ margin-top: 0%;
+
+}
+
+.imagenCajas a img:hover{
+  transform: scale(1.2);
+}
+
+.imagenCajas{
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 0%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+
 
   .imagencajas {
   display: flex;
@@ -845,24 +1303,18 @@ header nav ul li:hover ul{
   padding-top: 2%;
   grid-area: cajas;
 }
-  .imagen {
-    
+  .imagen {   
     grid-area: imagen;
-    padding-top: 2%;
+    padding-top: 0%;
     padding-right: 2%;
-    padding-left: 2%;
+    padding-left: 5%;
     padding-bottom: 2%;
-    background-color: pink;
-    margin-left: 10%;
-    margin-right: 10%;
     margin-top: 0%;
     margin-bottom: 0%; 
-    width: 80%;
+    width: 25%;
+   
   }
-  #carouselExampleControls {
-    width: 1200px;
-    margin-left: 400px;
-     }
+
 
   .gridArea {
     display: grid;
@@ -870,24 +1322,36 @@ header nav ul li:hover ul{
     "boxes boxes boxes" 
     "imagen imagen imagen"
     "cajas  cajas cajas";
-    background-color: #b5b5b5;
     margin-right: 5%; 
      margin-left: 5%;
      margin-bottom: 2%;
-     margin-top: 10%;
+     margin-top: 0%;
     width: 90%;
+      
   }
 
+
+.boxes{
+  margin-top: 8%;
+}
+
+.cajasu{
+  display: flex;
+  flex-direction: row;
+}
+
 .button{
-  width: 200px;
-  height: 40px;
+  width: 40%;
+  height: 10%;
   color: white;
-  font-size: 15px;
+  font-size: 1rem;
   font-family: 'Noticia Text', serif;
   border:solid 1px grey;
   background-color: pink;
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin-top: 3%;
+  margin-bottom: 6%;
+  margin-right: 20%;
+  margin-left: 20%;
 }
 
 
@@ -906,27 +1370,23 @@ header nav ul li:hover ul{
     margin-right: 5%;
     margin-top: 0%;
   }
-#carouselExampleControls {
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 5%; 
-}
-.fondo{
-    background-image: url(../im2/caja.jpg);
-    background-size: cover;
-     margin-left: 0%;
-     margin-right: 0%;
-     width: 100%;
+
+.carrousel2 {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%; 
+  margin-top: 0%;
 }
 
-.sobrecocobox{
-  background-image: url(../im2/caja.jpg);
+ .fondo{
+ background-image: url(../im2/fondo.jpeg);
     background-size: cover;
-     margin-left: 0%;
-     margin-right: 0%;
-     width: 100%;
-}
+    padding-bottom: 15%;
+ }
+ .sobrecocobox{
+    padding-bottom: 50%;
+ }
+
   /*media para contacto*/
   .contacto1 {
     display: grid;
@@ -936,8 +1396,9 @@ header nav ul li:hover ul{
  "footer footer footer footer";
 }
   .ul_lista {
-    margin-left: 10%;
-    margin-right: 10%; 
+    margin-left: 15%;
+    margin-right: 15%; 
+    margin-top: 2%;
   }
   .lista_preguntas {
     font-size: 23.75px;
@@ -954,20 +1415,24 @@ header nav ul li:hover ul{
     word-spacing: 5%;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 5%;
+    padding-top: 2%;
     padding-bottom: 5%;
     border: solid 2px #b5b5b5;
     align-items: center;
     margin-left: 25%;
     margin-right: 25%;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-bottom: 5%;
     align-content: left;
     align-items: left;
     width: 40%; 
   }
   .flex {
-    grid-area: contacto; 
+    grid-area: contacto;
+    background-image: url(../im2/fondo.jpeg);
+    background-size: cover;
+    padding-bottom: 20%;
+
   }
   .formulario label {
     display: flex;
@@ -984,4 +1449,14 @@ header nav ul li:hover ul{
     border-right: none;
     border-bottom: solid, 1px, red; 
   } 
-  }
+
+  .preguntas{
+    background-image: url(../im2/fondo.jpeg);
+    background-size: cover;
+    padding-bottom: 20%;
+    padding-top: 5%;
+   }
+
+
+}
+
