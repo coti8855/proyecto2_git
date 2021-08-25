@@ -105,11 +105,13 @@ a.opcionesv {
   text-transform: capitalize;
   text-decoration: none;
   color: black; 
+  padding-top: 2%;
 }
 
-a.opcionesv:hover {
+a .opcionesv:hover{
   transform: scale(1.2); 
 }
+
 
 
 /*titulos de las otras paginas*/
@@ -150,7 +152,6 @@ a.opcionesv:hover {
   line-height: 20px;
   text-decoration: none; 
   color: #b5b5b5;
-  word-spacing: 2rem;
 }
 
 
@@ -277,7 +278,7 @@ a.opcionesv:hover {
 
 .flex {
   grid-area: contacto;
-      background-image: url(../im2/fondo.jpeg);
+      background-image: url(../im2/moños.png);
     background-size: cover;
     padding-bottom: 20%;
    }
@@ -700,16 +701,16 @@ p input:hover {
   text-align: center;
 
 }
-a .opcionesv {
+a.opcionesv {
   text-align: centre;
   font-size: 2rem;
   text-transform: capitalize;
   text-decoration: none;
   color: black; 
-  padding-top: 6%;
+  padding-top: 2%;
 }
 
-a .opcionesv:hover {
+a .opcionesv:hover{
   transform: scale(1.2); 
 }
 
@@ -1003,7 +1004,7 @@ header nav ul li:hover ul{
 
  .flex {
     grid-area: contacto;
-    background-image: url(../im2/fondo.jpeg);
+    background-image: url(../im2/moños.png);
     background-size: cover;
     padding-bottom: 20%;
  } 
@@ -1136,18 +1137,19 @@ header nav ul li:hover ul{
      width: 100%;
   }
 
-  a .opcionesv{
+ a.opcionesv {
   text-align: centre;
-  font-size: 4rem;
+  font-size: 2rem;
   text-transform: capitalize;
   text-decoration: none;
   color: black; 
-  margin-top: 6%;
+  padding-top: 2%;
 }
 
-a .opcionesv:hover {
+a .opcionesv:hover{
   transform: scale(1.2); 
 }
+
 
   .parrafos{
   display: flex;
@@ -1155,7 +1157,7 @@ a .opcionesv:hover {
   flex-wrap: nowrap;
 }
    .foto1 {
-   width: 25%;
+   width: 27%;
   grid-area: imagen;
   margin-left: 0%;
   margin-right: 15%;
@@ -1209,6 +1211,7 @@ a .opcionesv:hover {
   animation-duration: 3s;
   text-align: center;
   margin-top: 0%;
+  padding-bottom: 1%;
 
 }
 
@@ -1288,7 +1291,7 @@ a .opcionesv:hover {
 }
 
 .section_opciones--cajas{
-  background-image: url(../im2/carrousel.jpg);
+  padding-bottom: 10%;
 }
 
 
@@ -1350,7 +1353,7 @@ a .opcionesv:hover {
 .imagenCajas{
   margin-right: 10%;
   margin-left: 10%;
-  margin-top: 0%;
+  margin-top: 2%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -1500,9 +1503,9 @@ a .opcionesv:hover {
 }
 
  .fondo{
- background-image: url(../im2/fondo.jpeg);
+ background-image: url(../im2/maspulseras.png);
     background-size: cover;
-    padding-bottom: 4%;
+    padding-bottom: 15%;
  }
 
 
@@ -1575,13 +1578,15 @@ a .opcionesv:hover {
   } 
 
   .preguntas{
-    background-image: url(../im2/fondo.jpeg);
+    background-image: url(../im2/maspulseras.png);
     background-size: cover;
     padding-bottom: 20%;
     padding-top: 0%;
     margin-top: 0%;
    }
 
-
+  .opcajas1{
+    width: 20%;
+  }
 }
 
