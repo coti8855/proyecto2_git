@@ -143,7 +143,7 @@ a .opcionesv:hover{
   position: sticky;
   margin-bottom: 0%;
   padding-bottom: 3%;
-  margin-top: 100%;
+  margin-top: 0%;
   grid-area: footer; 
 }
 .footer h4{
@@ -253,9 +253,9 @@ a .opcionesv:hover{
 /*fondo de la pagina nosotras*/
 .fondo {
   grid-area: sobrenosotras; 
-  background-image: url(../im2/fondo.jpeg);
+  background-image: url(../im2/maspulseras.png);
   background-size: cover;
-  padding-bottom: 0%;
+  padding-bottom: 15%;
   margin-bottom: 0%;
 }
 
@@ -286,9 +286,7 @@ a .opcionesv:hover{
 
 .flex {
   grid-area: contacto;
-      background-image: url(../im2/moños.png);
-    background-size: cover;
-    padding-bottom: 20%;
+      
    }
 
 .formulario label {
@@ -433,7 +431,10 @@ p input:hover {
   grid-area: carrousel1; }
 
 .carrousel2 {
-  grid-area: carrousel2; }
+  grid-area: carrousel2; 
+   margin-bottom: 8%;
+  margin-top: 0%;
+}
 
 #carouselExampleControls {
   width: 80%;
@@ -572,9 +573,10 @@ p input:hover {
 
 .preguntas {
   grid-area: preguntas;
-  background-image: url(../im2/fondo.jpeg);
-  background-size: cover;
-  padding-bottom: 20%;
+  background-color: #fffefa;
+   padding-top: 0%;
+   margin-top: 15%;
+   padding-bottom: 15%;
    }
 
 /*sobre cocobox*/
@@ -586,6 +588,7 @@ p input:hover {
 .servicio_fondo{
   padding-top: 10%;
 }
+
 
   .opcaja1{
   width: 22%;
@@ -603,6 +606,7 @@ p input:hover {
     width: 20%;
     padding-top:7%;
    }
+
 
 .servicio_fondo h2 {
     margin-top: 5%;
@@ -628,7 +632,11 @@ p input:hover {
   grid-template-areas: "menu"
  "opciones"
  "lonuevo"
- "footer"; }
+ "footer"; 
+  background-image: url(../im2/pulserafondo.jpg);
+ background-size: 100%;
+ background-repeat: no-repeat;
+}
 
 /*grid pagina cajas*/
 .gridcajas {
@@ -653,7 +661,12 @@ p input:hover {
   grid-template-areas: "menu"
  "contacto"
  "preguntas"
- "footer"; }
+ "footer"; 
+background-image: url(../im2/moños.png);
+    background-size: 100%;
+  background-repeat: no-repeat;
+
+}
 
 
 
@@ -883,7 +896,10 @@ header nav ul li:hover ul{
     "menu menu menu"
  "opciones opciones opciones"
  "lonuevo lonuevo lonuevo"
- "footer footer footer"; 
+ "footer footer footer";
+  background-image: url(../im2/pulserafondo.jpg);
+ background-size: 100%;
+ background-repeat: no-repeat; 
 }
 
 .imagenCajas a img{
@@ -927,7 +943,7 @@ header nav ul li:hover ul{
 .preguntas h2{
   text-align: center;
     font-weight: bold;
-    padding-top: 15%;
+    padding-top: 2%;
     padding-bottom: 0%;
     font-size: 4rem;
     margin-left: 5%;
@@ -973,7 +989,7 @@ header nav ul li:hover ul{
  "footer footer footer"; 
 }
 .fondo{
- background-image: url(../im2/fondo.jpeg);
+    background-image: url(../im2/maspulseras.png);
     background-size: cover;
     padding-bottom: 15%;
  }
@@ -1024,8 +1040,7 @@ header nav ul li:hover ul{
   padding-top: 5%;
   padding-bottom: 5%;
   grid-area: boxes;
-  text-align: center
-  ;
+  text-align: center;
   align-items: center;
    }
 
@@ -1037,19 +1052,21 @@ header nav ul li:hover ul{
  "contacto contacto contacto"
  "preguntas preguntas preguntas"
  "footer footer footer"; 
+ background-image: url(../im2/moños.png);
+ background-size: 100%;
+ background-repeat: no-repeat;
 }
 
  .flex {
     grid-area: contacto;
-    background-image: url(../im2/moños.png);
-    background-size: cover;
-    padding-bottom: 20%;
+   
  } 
  .preguntas{
-    background-image: url(../im2/fondo.jpeg);
-    background-size: cover;
-    padding-bottom: 20%;
-    padding-top: 5%;
+   margin-bottom: 0%;
+   background-color: #fffefa;
+   padding-top: 3%;
+   margin-top: 20%;
+   padding-bottom: 8%;
    }
      .ul_lista {
     margin-left: 10%;
@@ -1061,6 +1078,7 @@ header nav ul li:hover ul{
   width: 70%;
   margin-left: 15%;
   margin-right: 15%; 
+  margin-bottom: 8%;
   margin-top: 0%;
 }
  
@@ -1318,16 +1336,21 @@ a .opcionesv:hover{
  "opciones opciones opciones opciones"
  "lonuevo lonuevo lonuevo lonuevo"
  "footer footer footer footer"; 
+ background-image: url(../im2/pulserafondo.jpg);
+ background-size: 100%;
+ background-repeat: no-repeat;
 }
   .section_opciones {
-  margin-left: 16%;
-  margin-right: 16%;
+  margin-left: 14%;
+  margin-right: 14%;
   justify-content: center;
   grid-area: lonuevo; 
+
 }
 
 .section_opciones--cajas{
-  padding-bottom: 10%;
+  padding-bottom: 0%;
+
 }
 
 
@@ -1372,10 +1395,7 @@ a .opcionesv:hover{
     margin-right: 25%;
     text-align: center; 
   }
-.imagenCajas a img{
- 
 
-}
 
 .imagenCajas a img:hover{
   transform: scale(1.2);
@@ -1537,6 +1557,7 @@ a .opcionesv:hover{
   margin-top: 0%;
   padding-top: 0%;
   justify-content: center;
+   margin-bottom: 8%;
 }
 
  .fondo{
@@ -1553,6 +1574,9 @@ a .opcionesv:hover{
  "contacto contacto contacto contacto"
  "preguntas preguntas preguntas preguntas"
  "footer footer footer footer";
+  background-image: url(../im2/moños.png);
+    background-size: 100%;
+  background-repeat: no-repeat;
 }
   .ul_lista {
     margin-left: 10%;
@@ -1581,22 +1605,18 @@ a .opcionesv:hover{
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 1%;
-    margin-bottom: 5%;
+    margin-bottom: 0%;
     align-content: center;
     align-items: left;
     width: 50%; 
     border: none;
     box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08); 
-    overflow: hidden;
-    transition: 0.3s;
   }
 
   .flex {
     grid-area: contacto;
-    background-image: url(../im2/moños.png);
-    background-size: cover;
-    padding-bottom: 20%;
-    margin-bottom: 0%;
+    
+
 
   }
   .formulario label {
@@ -1615,11 +1635,11 @@ a .opcionesv:hover{
   } 
 
   .preguntas{
-    background-image: url(../im2/maspulseras.png);
-    background-size: cover;
-    padding-bottom: 20%;
-    padding-top: 0%;
-    margin-top: 0%;
+   margin-bottom: 20%;
+   background-color: #fffefa;
+   padding-top: 3%;
+   margin-top: 20%;
+   padding-bottom: 8%;
    }
 
   .opcaja1{
@@ -1638,5 +1658,18 @@ a .opcionesv:hover{
     width: 20%;
     padding-top:7%;
    }
+
+   .preguntas h2{
+  text-align: center;
+    font-weight: bold;
+    padding-top: 2%;
+    padding-bottom: 0%;
+    font-size: 4rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
 }
 
