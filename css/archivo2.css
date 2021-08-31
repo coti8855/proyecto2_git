@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0; 
+}
 
 html {
   font-size: 80%; 
@@ -144,6 +145,7 @@ a .opcionesv:hover{
   margin-bottom: 0%;
   padding-bottom: 3%;
   margin-top: 0%;
+  margin-bottom: 0%;
   grid-area: footer; 
 }
 .footer h4{
@@ -466,18 +468,16 @@ p input:hover {
   grid-area: servicio;
   margin-left: 5%;
   margin-right: 5%;
-  justify-content:center;
-      
-    background-size: cover;
-    margin-right: 0%;
-    margin-left: 0%;
+  justify-content:center;  
+  background-size: cover;
+  margin-right: 0%;
+  margin-left: 0%;
    }
     .parrafos{
   display: inline-block;
 }
    .foto1 {
    width: 50%;
-  grid-area: imagen;
   margin-left: 0%;
   margin-right: 22%;
   margin-top: 0%;
@@ -491,7 +491,6 @@ p input:hover {
 
    .foto2 {
   width: 52%;
-  grid-area: imagen;  
   margin-left: 0%;
   margin-right: 22%;
   margin-top: 0%;
@@ -550,8 +549,8 @@ p input:hover {
  padding-right: 2%;
   }
   .opcaja3{
-    width: 20%;
-    padding-top:7%;
+    width: 18%;
+    padding-top:8%;
    }
 .otrotitulos{
     text-align: center;
@@ -587,6 +586,7 @@ p input:hover {
    }
 .servicio_fondo{
   padding-top: 10%;
+  margin-bottom: 40%;
 }
 
 
@@ -633,7 +633,6 @@ p input:hover {
  "opciones"
  "lonuevo"
  "footer"; 
-  background-image: url(../im2/pulserafondo.jpg);
  background-size: 100%;
  background-repeat: no-repeat;
 }
@@ -897,7 +896,6 @@ header nav ul li:hover ul{
  "opciones opciones opciones"
  "lonuevo lonuevo lonuevo"
  "footer footer footer";
-  background-image: url(../im2/pulserafondo.jpg);
  background-size: 100%;
  background-repeat: no-repeat; 
 }
@@ -1061,6 +1059,10 @@ header nav ul li:hover ul{
     grid-area: contacto;
    
  } 
+
+ .servicio_fondo{
+    margin-bottom: 0%;
+ }
  .preguntas{
    margin-bottom: 0%;
    background-color: #fffefa;
@@ -1275,6 +1277,8 @@ a .opcionesv:hover{
      margin-left: 0%;
      margin-top: 0%;
      padding-top: 6%;
+    margin-bottom: 0%;
+
   }
 
  .servicio_fondo h2{
@@ -1336,7 +1340,7 @@ a .opcionesv:hover{
  "opciones opciones opciones opciones"
  "lonuevo lonuevo lonuevo lonuevo"
  "footer footer footer footer"; 
- background-image: url(../im2/pulserafondo.jpg);
+ background-image: url(../im2/mate.jpg);
  background-size: 100%;
  background-repeat: no-repeat;
 }
@@ -1344,8 +1348,7 @@ a .opcionesv:hover{
   margin-left: 14%;
   margin-right: 14%;
   justify-content: center;
-  grid-area: lonuevo; 
-
+  grid-area: lonuevo;
 }
 
 .section_opciones--cajas{
@@ -1471,7 +1474,7 @@ a .opcionesv:hover{
     "cajas  cajas cajas";
     margin-right: 5%; 
      margin-left: 5%;
-     margin-bottom: 0%;
+     margin-bottom: 3%;
      margin-top: 0%;
     width: 90%;
       
@@ -1501,6 +1504,7 @@ a .opcionesv:hover{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+
 }
 
 .boxes {
@@ -1655,8 +1659,11 @@ a .opcionesv:hover{
  padding-right: 2%;
   }
   .opcaja3{
-    width: 20%;
-    padding-top:7%;
+    width: 18%;
+    padding-top:8
+
+
+    %;
    }
 
    .preguntas h2{
