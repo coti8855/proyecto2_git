@@ -147,6 +147,13 @@ a .opcionesv:hover{
   margin-bottom: 0%;
   grid-area: footer; 
 }
+.footer h3{
+  font-size: 23px;
+   word-spacing: 2px;
+   color: white;
+   padding-top: 2%;
+   
+}
 .footer h4{
   font-size: 23px;
    word-spacing: 2px;
@@ -155,6 +162,13 @@ a .opcionesv:hover{
    
 }
 
+.footer h6{
+  font-size: 23px;
+   word-spacing: 2px;
+   color: white;
+   padding-top: 2%;
+   
+}
 .footer a {
   text-align: center;
   color: white;
@@ -406,7 +420,7 @@ p input:hover {
    }
 
 .opciones_cuadros a:hover {
-  background: #ffe0e6;
+  background: #e8ccd7;
   color: #b5b5b5; 
 }
 
@@ -660,7 +674,7 @@ p input:hover {
  "contacto"
  "preguntas"
  "footer"; 
-background-image: url(../im2/moños.png);
+background-image: url(../im2/moños2.png);
     background-size: 100%;
   background-repeat: no-repeat;
 
@@ -1049,7 +1063,7 @@ header nav ul li:hover ul{
  "contacto contacto contacto"
  "preguntas preguntas preguntas"
  "footer footer footer"; 
- background-image: url(../im2/moños.png);
+ background-image: url(../im2/moños2.png);
  background-size: 100%;
  background-repeat: no-repeat;
 }
@@ -1577,7 +1591,7 @@ a .opcionesv:hover{
  "contacto contacto contacto contacto"
  "preguntas preguntas preguntas preguntas"
  "footer footer footer footer";
-  background-image: url(../im2/moños.png);
+  background-image: url(../im2/moños2.png);
     background-size: 100%;
   background-repeat: no-repeat;
 }
