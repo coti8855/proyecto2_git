@@ -14,22 +14,21 @@ body {
 }
 
 /*barra de navegacion*/
-.menu {
-  list-style: none;
-  background-color: #ffe0e6;
+.menu{
+  list-style: none;  
+  background-color: #e8ccd7;
   text-align: center;
+  word-spacing: 20px;
   position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
+  top: 0%;
+  left: 0%;
+  right: 0%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: nowrap;
-  grid-area: menu; 
-  
+  grid-area: menu;
 }
-
 .lista li a {
   font-size: 20px;
   line-height: 2rem;
@@ -40,10 +39,9 @@ body {
   margin-bottom: 10%;
 
 }
-
 .lista li {
   display: inline-block; 
-
+  word-spacing: 50%;
 }
 
 .lista li a:hover {
@@ -54,18 +52,19 @@ body {
 header nav ul li ul {
   flex-direction: column;
   position: absolute;
-  background-color: #ffe0e6;
+  background-color: #e8ccd7;
   display: none; 
 }
 
 header nav ul li ul li {
   width: 100%;
   height: 100%;
-
   position: relative;
- 
+  }
 
-} 
+header nav ul li ul li {
+  word-spacing: 3px;
+  } 
 
 header nav ul li:hover ul {
   display: flex;
@@ -138,7 +137,7 @@ a .opcionesv:hover{
 
 /*pie de pagina*/
 .footer {
-  background-color: #ffe0e6;
+  background-color: #e8ccd7;
   text-align: center;
   color: white;
   position: sticky;
@@ -319,7 +318,7 @@ a .opcionesv:hover{
 }
 
 .enviar:hover {
-  background: #ffe0e6; 
+  background: #e8ccd7; 
 }
 
 .button{
@@ -335,7 +334,7 @@ a .opcionesv:hover{
 }
 
 .button:hover{
-    background: #ffe0e6;
+    background: #e8ccd7;
 }
 
 p input:hover {
@@ -394,7 +393,7 @@ p input:hover {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1); }
 
 .section_opciones .opciones_cuadros:hover {
-  background: #ffe0e6; 
+  background: #e8ccd7; 
 }
 
 .opciones_cuadros a {
@@ -707,7 +706,7 @@ background-image: url(../im2/moños.png);
 
 .menu{
   list-style: none;  
-  background-color: #ffe0e6;
+  background-color: #e8ccd7;
   text-align: center;
   word-spacing: 20px;
   position: fixed;
@@ -871,7 +870,7 @@ header nav ul li ul{
   
   flex-direction: column;
   position: absolute;
-  background-color: #ffe0e6;
+  background-color: #e8ccd7;
   display: none;
 }
 header nav ul li ul li{
@@ -1016,7 +1015,7 @@ header nav ul li:hover ul{
 }
 
 .button:hover{
-    background: #ffe0e6;
+    background: #e8ccd7;
 }
 
 
@@ -1124,7 +1123,7 @@ header nav ul li:hover ul{
 
 .menu{
   list-style: none;  
-  background-color: #ffe0e6;
+  background-color: #e8ccd7;
   text-align: center;
   word-spacing: 20px;
   position: fixed;
@@ -1163,7 +1162,7 @@ header nav ul li ul{
   
   flex-direction: column;
   position: absolute;
-  background-color: #ffe0e6;
+  background-color: #e8ccd7;
   display: none;
 }
 header nav ul li ul li{
@@ -1386,7 +1385,7 @@ a .opcionesv:hover{
     display: inline-block; 
   }
   .section_opciones .opciones_cuadros:hover {
-    background: #ffe0e6; 
+    background: #e8ccd7; 
   }
 
   .section_opciones h2 {
@@ -1533,7 +1532,7 @@ a .opcionesv:hover{
 }
 
 .button:hover{
-    background: #ffe6eb;
+    background: #e8ccd7;
 }
 
 
